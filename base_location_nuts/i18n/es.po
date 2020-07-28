@@ -9,14 +9,15 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-24 03:46+0000\n"
-"PO-Revision-Date: 2018-01-24 03:46+0000\n"
-"Last-Translator: OCA Transbot <transbot@odoo-community.org>, 2018\n"
+"PO-Revision-Date: 2020-02-04 15:13+0000\n"
+"Last-Translator: Jairo Llopis <jairo.llopis@tecnativa.com>\n"
 "Language-Team: Spanish (https://www.transifex.com/oca/teams/23907/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.10\n"
 
 #. module: base_location_nuts
 #: model:ir.ui.view,arch_db:base_location_nuts.nuts_import_form
@@ -64,19 +65,19 @@ msgid "Display Name"
 msgstr "Nombre mostrado"
 
 #. module: base_location_nuts
-#: code:addons/base_location_nuts/wizard/nuts_import.py:138
+#: code:addons/base_location_nuts/wizard/nuts_import.py:139
 #, python-format
 msgid "Downloaded file is not a valid XML file"
 msgstr "El fichero descargado no es un fichero XML válido"
 
 #. module: base_location_nuts
-#: code:addons/base_location_nuts/wizard/nuts_import.py:130
+#: code:addons/base_location_nuts/wizard/nuts_import.py:131
 #, python-format
 msgid "Got an error %d when trying to download the file %s."
 msgstr "Error %d al intentar descargar el fichero %s."
 
 #. module: base_location_nuts
-#: code:addons/base_location_nuts/wizard/nuts_import.py:126
+#: code:addons/base_location_nuts/wizard/nuts_import.py:127
 #, python-format
 msgid "Got an error when trying to download the file: %s."
 msgstr "Error al intentar descargar el fichero: %s."
@@ -164,29 +165,33 @@ msgstr "Objetos NUTS"
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_partner_nuts1_id
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_users_nuts1_id
 #: model:ir.ui.view,arch_db:base_location_nuts.view_res_partner_filter_nuts
+#, fuzzy
 msgid "NUTS L1"
-msgstr ""
+msgstr "NUTS L1"
 
 #. module: base_location_nuts
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_partner_nuts2_id
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_users_nuts2_id
 #: model:ir.ui.view,arch_db:base_location_nuts.view_res_partner_filter_nuts
+#, fuzzy
 msgid "NUTS L2"
-msgstr ""
+msgstr "NUTS L2"
 
 #. module: base_location_nuts
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_partner_nuts3_id
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_users_nuts3_id
 #: model:ir.ui.view,arch_db:base_location_nuts.view_res_partner_filter_nuts
+#, fuzzy
 msgid "NUTS L3"
-msgstr ""
+msgstr "NUTS L3"
 
 #. module: base_location_nuts
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_partner_nuts4_id
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_users_nuts4_id
 #: model:ir.ui.view,arch_db:base_location_nuts.view_res_partner_filter_nuts
+#, fuzzy
 msgid "NUTS L4"
-msgstr ""
+msgstr "NUTS L4"
 
 #. module: base_location_nuts
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_partner_nuts_name
@@ -194,9 +199,14 @@ msgid "Name"
 msgstr "Nombre"
 
 #. module: base_location_nuts
+#: model:ir.model.fields,field_description:base_location_nuts.field_res_partner_nuts_not_updatable
+msgid "Not Updatable"
+msgstr "No actualizable"
+
+#. module: base_location_nuts
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_partner_nuts_parent_id
 msgid "Parent"
-msgstr ""
+msgstr "Padre"
 
 #. module: base_location_nuts
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_partner_nuts_parent_left
@@ -221,7 +231,7 @@ msgstr "Provincia"
 #. module: base_location_nuts
 #: model:ir.model.fields,field_description:base_location_nuts.field_res_country_state_level
 msgid "State Level"
-msgstr ""
+msgstr "Nivel de estado"
 
 #. module: base_location_nuts
 #: model:ir.ui.view,arch_db:base_location_nuts.nuts_import_form
@@ -230,17 +240,23 @@ msgid ""
 "                NUTS 2013 from Europe RAMON metadata service.\n"
 "                Updating or creating new NUTS entries if not\n"
 "                found already in the system, and DELETING MISSING\n"
-"                ENTRIES from new downloaded file."
+"                ENTRIES from new downloaded file.\n"
+"\n"
+"                Update or deletion is prevented for NUTS entries with the "
+"flag 'Not updatable'."
 msgstr ""
 "Este asistente descargará la última version de\n"
 "                NUTS 2013 desde el servicio de metadatos europeo RAMON.\n"
 "                Actualizando o creando nuevas regiones NUTS si no\n"
 "                las encuentra en el sistema, y BORRANDO LAS QUE NO "
 "ENCUENTRE\n"
-"                en el nuevo fichero descargado."
+"                en el nuevo fichero descargado.\n"
+"\n"
+"                Las entradas NUTS marcadas como 'no actualizables' no serán "
+"actualizadas ni borradas."
 
 #. module: base_location_nuts
-#: code:addons/base_location_nuts/wizard/nuts_import.py:108
+#: code:addons/base_location_nuts/wizard/nuts_import.py:109
 #, python-format
 msgid "Value not found for mandatory field %s"
 msgstr "El valor no se ha encontrado para el campo obligatorio %s"
@@ -253,3 +269,7 @@ msgid ""
 "        Sales &gt; Configuration &gt; Address Book &gt; Localization &gt; "
 "Import NUTS 2013"
 msgstr ""
+"Debe pulsar en el asistente de importación para rellenar las entradas NUTS\n"
+"        en la base de datos Odoo en:\n"
+"        Ventas &gt; Configuración &gt; Libreta de direcciones &gt; "
+"Localización &gt; Importar NUTS 2013"
